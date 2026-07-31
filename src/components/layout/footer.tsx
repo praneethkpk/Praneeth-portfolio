@@ -1,6 +1,7 @@
 "use client";
 
 import { socialLinks } from "@/lib/constants";
+import { VisitorCounter } from "@/components/ui/visitor-counter";
 
 function GitHubIcon({ className }: { className?: string }) {
   return (
@@ -51,6 +52,9 @@ export function Footer() {
             </a>
           ))}
         </div>
+
+        {/* Visitor Counter Badge */}
+        <VisitorCounter className="mt-2" />
 
         {/* Currently Learning */}
         <div className="flex flex-col items-center gap-3 mt-4 pt-6 border-t border-outline-variant/10 w-full max-w-md">
